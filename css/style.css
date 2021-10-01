@@ -1,0 +1,650 @@
+/* ========= RESET */
+body, ul,li { 
+    margin: 0;
+    padding: 0;
+}
+
+li { 
+    list-style: none;
+}
+
+body { 
+    background-color: black;
+}
+
+h1 { 
+    color: #32A224;
+    font-size: 20px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+
+
+
+.paragrafo { 
+    text-align: center;
+    color: #BE9714;
+    font-size: 16px;
+   
+}
+
+/* ============================== CONTAINER */
+
+.container { 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 280px;
+    background-color:#32A224;
+
+    background-image: url('/img/circuito-fundo-total-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow-y:auto;
+}
+
+
+
+.container-formula-paralelo { 
+    display: none;
+    background-color: rgb(182, 189, 170);
+    background-image: url('/img/formula-paralelo-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 255px;
+    height: 110px;
+    left: 20px;
+    top: 72px;
+    border-radius: 7px;
+    position: absolute;
+    z-index: 3000;
+}
+.ativar-formula-paralelo { 
+    display: block;
+    }
+
+.container-formula-paralelo p { 
+    text-align: center;
+    margin-top: 3px;
+    font-size: 12px;
+    color:#32A224;
+}
+
+.container-formula-paralelo span { 
+    background-image: url('/img/icon-fechar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 6px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.container-formula-paralelo span:hover { 
+    background-image: url('/img/icon-fechar-ouro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-formula-serie { 
+    display: none;
+    background-color: rgb(182, 189, 170);
+    background-image: url('/img/formula-serie.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 255px;
+    height: 110px;
+    left: 20px;
+    top: 72px;
+    border-radius: 7px;
+    position: absolute;
+    z-index: 3000;
+}
+.ativar-formula-serie { 
+    display: block;
+}
+
+.container-formula-serie p { 
+    text-align: center;
+    margin-top: 7px;
+    font-size: 12px;
+    color:#32A224;
+}
+
+.container-formula-serie span { 
+    background-image: url('/img/icon-fechar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    right: 6px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.container-formula-serie span:hover { 
+    background-image: url('/img/icon-fechar-ouro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-RespostaAmbos { 
+    display: flex;
+    justify-content: center;
+    background-color: rgb(203, 213, 223);
+    width: 110px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.container-RespostaAmbos2 { 
+    background-color: #29811d;
+    width: 105px;
+    border-radius: 7px;
+}
+
+.container-button { 
+    margin: 0 auto;
+    margin-top: 4px;
+    width: 300px;
+    height: 30px;
+    background-color:#32A224;
+
+    background-image: url('/img/circuito-fundo-total-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.contaier-Ambas-Respostas { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 300px;
+    height: 80px;
+    background-color:#32A224;
+    border-radius: 0 0 10px 10px;
+
+    background-image: url('/img/circuito-fundo-total-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+.container-geral-salvar { 
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #32A224;
+    background-image: url('/img/circuito-fundo-total-verde.png');
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+.container-salvar { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.corpo-titulo-salvar{ 
+    width: 60px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.Pp { 
+    left: 21px;
+}
+
+.container-salvar p { 
+    text-align: center;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 1px 5px 0px 5px;
+    top: 0px;
+    border-bottom: #174211 solid 2px;  
+    position: absolute;
+}
+
+
+
+.container-salvar li { 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 1px 3px 1px 3px;
+    background-color: #126307;
+    border-radius: 7px;
+    margin: 1px;
+    position: relative;
+}
+
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+.container-salvar h5{ 
+    content: '';
+    background-image: url('/img/icon-excluir-nuvem.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 140px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.container-salvar h5:hover { 
+    background-image: url('/img/icon-excluir-nuvem-vermelho.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
+/* ===========================  Resposta html */
+
+
+.RespostaFinalParalelo { 
+    background-color: rgb(203, 213, 223);
+    margin-right: 7px;
+    width: 100px;
+    height: 60px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('/img/circuito-respostas-opacidade-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+.RespostaFinalSerie { 
+    background-color: rgb(203, 213, 223);
+    margin-left: 7px;
+    width: 100px;
+    height: 60px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('/img/circuito-respostas-opacidade-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+.Ambos-os-Resultado-css { 
+    color: #29811d;
+    font-size: 25px;
+}
+
+/* --------------- LABELs */
+
+
+.labelParalelo { 
+   color: rgb(255, 255, 255);
+   margin-top: 6px;
+   font-size: 30px;
+   margin-left: 15px;
+   border-radius: 7px;
+   
+   position: absolute;
+}
+
+
+/* --------------- INPUTs */
+
+.inputQuantidade { 
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.ul-listInputs { 
+    text-align: center;
+    
+}
+
+/* ====================================================================================== BOTÔEs */
+
+.botaoAddInputs { 
+color:  #BE9714;
+width: 50px;
+border-radius: 7px;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+.botaoAddInputs:hover { 
+    color: white;
+    background-color: #BE9714;
+
+}
+
+.caixa-de-botao { 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 4px;
+}
+
+.butaoAmbas { 
+    color: #BE9714;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.butaoAmbas:hover { 
+    color: white;
+    background-color: #BE9714;
+}
+
+.button-Calculo-Total-CSS { 
+    color: #BE9714;
+    display: block;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.button-Calculo-Total-CSS:hover { 
+    color: white;
+    background-color: #BE9714;
+}
+
+.Limpar { 
+        background-image: url('/img/icon-desfazer-verde.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 100;
+        cursor: pointer;
+        transition: 0.2s;
+}
+
+.Limpar:hover { 
+    background-image: url('/img/icon-desfazer-ouro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+}
+
+.Limpar:hover::after { 
+    content: 'Limpar';
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.7s;
+    width: 60px;
+    height: 20px;
+    right: -13px;
+    bottom: 40px;
+   position: absolute;
+}
+
+.icon-info-Paralelo{ 
+    background-image: url('/img/icon-informação-verde.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    left: 7px;
+    top: 7px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.icon-info-Paralelo:hover { 
+    background-image: url('/img/icon-informação.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+}
+
+
+.icon-info-serie { 
+    background-image: url('/img/icon-informação-verde.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    right: 7px;
+    top: 7px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.icon-info-serie:hover { 
+    background-image: url('/img/icon-informação.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+}
+
+.icone-salvando-paralelo { 
+    background-image: url('/img/icon-salvar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    right: 4px;
+    top: 4px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.icone-salvando-paralelo:hover { 
+    background-image: url('/img/icon-salvar-ouro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icone-salvando-serie { 
+    background-image: url('/img/icon-salvar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    right: 4px;
+    top: 4px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.icone-salvando-serie:hover { 
+    background-image: url('/img/icon-salvar-ouro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icone-salvando-total { 
+    background-image: url('/img/icon-salvar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    right: -130px;
+    top: 134px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.icone-salvando-total:hover { 
+    background-image: url('/img/icon-salvar-ouro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+    
+
+
+
+/* 000000000000000000000000000000000 TOTAL DOS RESULTADOS */
+
+.container-da-Resposta-total { 
+    position: absolute;
+    display: none;
+}
+
+.ativar-container-ResTOTAL { 
+    display: block;
+}
+
+.container-da-Resposta-total h3 { 
+    background-color: rgb(203, 213, 223);
+    color: #29811d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 90px;
+    border-radius: 7px;
+    font-size: 50px;
+    margin: 0;
+    top: 130px;
+    right: -135px;
+    position: absolute;
+
+    background-image: url('/img/circuito-respostas-opacidade-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.estiloResultado { 
+   color:#ffffff;
+   font-size: 18px;
+   font-weight: bold;
+   position: relative;
+}
+
+.estiloResultado span { 
+    color: rgb(70, 69, 69);
+    position: absolute;
+    left: 4px; 
+}
+
+.estiloResultado p { 
+    font-size: 13px;
+    bottom: -15px;
+    left: 18px;
+    color: rgb(70, 69, 69);
+    position: absolute;
+}
+
+.estiloResultado::before{ 
+    background-color:#194e11;
+ content: '';
+ width: 97px;
+ height: 1px;
+ left: 7px;
+position: absolute;
+}
+
+
+/* ============================== EU  O DESENVOLVEDOR  */
+
+
+.dev { 
+    color: rgb(110, 110, 110);
+    text-align: center;
+    font-size: 15px;
+}
+
+.dev a { 
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+    position: relative;
+    transition: 0.8s;
+    padding: 2px;
+    margin-bottom: 7px;
+}
+
+
+
+.dev a::after { 
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    bottom: 0;  
+    background-color: #BE9714;
+    position: absolute;
+}
+
+
+.dev a:hover { 
+     color: #BE9714;
+    transition: 0.4s;
+}
+
+.Icon:before { 
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: -20px;
+    bottom: -3px;
+    border-radius: 10px;
+    background-image: url(/img/icon-portfolio-ouro.png);
+    background-size: 100%;
+    position: absolute;
+}   

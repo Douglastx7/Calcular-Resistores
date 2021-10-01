@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="shortcut icon" href="/img/icon-resistor.png">
+    <title>calculando resistores</title>
+</head>
+<body>
+    
+
+
+    <h1>Calculando Resistores</h1>
+
+   
+    <p class="paragrafo">Digite os valores nos campos abaixo</p>
+     <section class="container">
+
+        
+                 <!-- ================================================================= PARALELO ========================== -->
+                <div class="caixa-paralelo">
+
+                      <div onclick="InfoParalelo()" class="icon-info-Paralelo"></div>
+                      <div class="container-formula-paralelo"><p><span onclick="FecharParalelo()"></span>Associação em paralelo</p></div>
+                    <label class="labelParalelo">Paralelo</label> <br>
+                    <input type="number" class="inputQuantidade" id="quantidadeParalelo" placeholder="">
+                
+                
+                    <button class="botaoAddInputs" onclick="AddListaParalelo()">Add</button>
+            
+                            <div class="container-RespostaAmbos">
+                                <div class="container-RespostaAmbos2">
+                                    <ul class="ul-listInputs" id="listaTelaParalelo">
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                </div>
+
+                
+
+                        <!-- ================================================================= SÉRIE ========================== -->
+                <div class="caixa-Serie">
+
+                    <div onclick="InfoSerie()" class="icon-info-serie"></div>
+                    <div class="container-formula-serie"><p>Associação em série <span onclick="FecharSerie()"></span></p></div>
+                    <label class="labelParalelo">Série</label> <br>
+                    <input type="number" class="inputQuantidade" id="quantidadeSerie" placeholder="">
+                
+                    <button class="botaoAddInputs" onclick="AddListaSerie()">Add</button>
+                    
+                            <div class="container-RespostaAmbos">
+                                <div class="container-RespostaAmbos2">
+                                    <ul class="ul-listInputs" id="listaInputSerie">
+                                    </ul>
+                                </div>
+                            </div>
+                </div>  
+                <div class="container-da-Resposta-total">
+                    <div class="icone-salvando-total" onclick="SalvarTotal()"></div>
+                      <h3 id="CorpoTotal"></h3>
+                </div>
+    </section>
+
+    <!-- ------------------------------------------ BUTTON --------------------------------------------- -->
+     <section class="container-button">
+         <div class="caixa-de-botao">
+
+            <div id="buttonParalelo">
+                <button class="butaoAmbas" onclick="CalcularParalelo()">Calcular</button>
+            </div>
+
+            <div class="Limpar" onclick="Limpar()">
+            </div>
+
+            <div id="">
+                <button class="butaoAmbas" onclick="CalcularSerie()">Calcular</button>
+            </div>
+
+         </div>
+     </section>
+
+    <!-- ========================================================= AMBAS RESPOSTAS  ========================== -->
+
+     <section class="contaier-Ambas-Respostas">
+
+              <div class="RespostaFinalParalelo">
+                  <div class="icone-salvando-paralelo" onclick="SalvarParalelo()"></div>
+                    <h2 class="Ambos-os-Resultado-css" id="totalSomaParalelo">
+                    </h2>
+              </div>
+
+              <div>
+                  <button class="button-Calculo-Total-CSS" onclick="CalcularParaleloEserie()">calcular</button>
+              </div>
+
+              <div  class="RespostaFinalSerie">
+                <div class="icone-salvando-serie" onclick="SalvarSerie()"></div>
+                <h2 class="Ambos-os-Resultado-css" id="totalSomaSerie">
+                </h2>
+              </div>
+
+     </section>
+
+     <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& MOSTRANDO NUVEM &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+     <section class="container-geral-salvar">
+              
+        <div class="container-salvar">
+             <h5 onclick="removerItem()"></h5>
+            <div class="salvar-total-paralelo" >
+                 <div class="corpo-titulo-salvar">
+                 </div>
+                 <div id="mostrandoParalelo">
+
+                 </div>
+               
+            </div>
+
+            <div class="salvar-total-do-total" >
+                <div  class="corpo-titulo-salvar">
+                </div>
+                <div id="mostrandoTotal">
+
+                </div>
+
+            </div>
+
+            <div  class="salvar-total-Serie" > 
+                <div  class="corpo-titulo-salvar">
+                 </div>
+                 <div id="mostrandoSerie">
+
+                 </div>
+
+            </div>
+
+
+        </div>
+
+     </section>
+     
+     <p class="dev">Desenvolvedor: <a class="Icon" href="https://www.douglasdeveloper.com/">Douglas Mateus Teixeira</a></p>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
